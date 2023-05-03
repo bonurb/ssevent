@@ -1,0 +1,11 @@
+{
+  "description": "client side ejs compiled with express middleware",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "pug": "^3.0.2",
+    "express": "^4.18.2"
+  }
+}
