@@ -24,6 +24,11 @@ app.get('/msg', function(req, res){
 
 });
 
+app.get('/prespawn', function(req, res){
+    console.log('/prespawn ...')
+    res.render('prespawn');
+});
+
 app.get('/spawn', function(req, res){
     console.log('/spawn ...')
     spw = cp.spawn('ping', ['-n', '3', '127.0.0.1']),
@@ -55,7 +60,7 @@ app.get('/spawn', function(req, res){
     spw.stderr.on('data', function (data) {
         sseResult.end('stderr: ' + data);
     });
-    // res.end();
+    // res.render('spawn');
 });
 
 app.listen(3001);
