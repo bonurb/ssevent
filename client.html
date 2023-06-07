@@ -6,6 +6,7 @@
     <a href="/ping">ping</a>
     <button type="button" onclick="evtSource.close()">Close Eventsource!</button>
     <a href="/kill">kill</a>
+    <a href="javascript:myFunction()">js function</a>
     <ul id="eventlist"> </ul>
 
    <script>              
@@ -33,6 +34,10 @@
     };
 
     console.log(evtSource);
+    
+    function myFunction() {
+        alert("in myFunction ...")
+    }
 
     </script>
 
